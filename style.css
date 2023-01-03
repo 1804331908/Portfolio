@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.topbar{
+    width: 100%;
+    height: 150px;
+    background-color: #28102e;
+    top: 0;
+    margin-top: -8px;
+    text-align: center;
+    padding-top: 32px;
+}
+.image{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    animation-name: photo;
+    animation-duration: 2s;
+}
+@keyframes photo{
+    from{
+        width: 50px;
+    }
+    to{
+        width: 130px;
+    }
+}
+.namebar{
+    width: 100%;
+    height: 322px;
+    line-height: 64px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: -26px;
+    padding-top: 1px;
+}
+.status{
+    color: #432C7A;
+    font-size: 32px;
+}
+.getBtn{
+    border-radius: 30px;
+    width: 12%;
+    height: 15%;
+}
+.getBtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.name{
+    font-size: 40px;
+    color: darkslategrey;
+    animation-name: scroll;
+    animation-duration: 2s;
+}
+@keyframes scroll{
+    from{
+      width: 1%;
+    }
+    to{
+width: 100%;
+    }
+}
+.iconDiv{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.iconDiv a{
+    padding: 8px;
+}
+.experienceDiv{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://uzma-yasmeen-portfolio.netlify.app/assets/images/keyboard.jpeg');
+    color: white;
+    /* margin-top: -26px; */
+    padding-top: 1px;
+}
+.myDiv{
+    text-align: center;
+}
+.myDiv h1{
+    font-size: 40px;
+}
+.skillDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.projectDiv{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://uzma-yasmeen-portfolio.netlify.app/assets/images/pexels-photo-1097930.jpg');
+   text-align: center; 
+   margin-top: -22px;
+   padding-top: 20px;
+   color: darkslategrey;
+}
+.kafeneDiv{
+    width: 50%;
+    text-align: center;
+    line-height: 39px;
+}
+.adminDiv{
+    width: 50%;
+    text-align: center;
+    line-height: 39px;
+}
+.kafene{
+    width: 54%;
+    margin-left: 136px;
+}
+.admin{
+    width: 54%;
+    margin-left: 136px;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+}
+.webBtn{
+    width: 25%;
+    height: 20%;
+    border-radius: 28px;
+}
+.webBtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.skills{
+    width: 100%;
+    height: 400px;
+    background-color: #EAFDFC;
+    text-align: center;
+    line-height: 14px;
+    padding-top: 30px;
+}
+.workDiv{
+    width: 100%;
+    height: 225px;
+    background-color: #243763;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+.footer{
+    width: 100%;
+    height: 90px;
+    background-color: #EFF5F5;
+    text-align: center;
+    padding-top: 22px;
+}
+.startBtn{
+    width: 10%;
+    height: 20%;
+    border-radius: 30px;
+    margin-top: 32px;
+}
+.startBtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* .status{
+    opacity: 0;
+  visibility: hidden;
+} */
+.status{
+    font-size: 25px;
+    margin-top: -34px;
+    animation-name: roll;
+    animation-duration: 2s;
+}  
+@keyframes roll{
+    from{
+        font-size: 2px;
+    }
+    to{
+       font-size: 25px;
+    }
+}               
+
+@media screen and (max-width: 400px) {
+.name{
+    font-size: 24px;
+    margin-top: 36px;
+}
+.status{
+    font-size: 20px;
+}
+.getBtn{
+    width: 35%;
+}
+.myDiv h1{
+    font-size: 25px;
+}
+.myDiv h3{
+    font-size: 15px;
+}
+.projectDiv{
+    
+    height: 660px;
+
+}
+.project{
+    display: block;
+}
+.kafeneDiv{
+    width: 100%;
+    text-align: center;
+    line-height: 33px;
+
+}
+.kafene{
+    width: 90%;
+    margin-left: 17px;
+    font-size: 14px;
+}
+.webBtn{
+    width: 32%;
+}
+.adminDiv{
+    width: 100%;
+}
+.admin{
+    width: 90%;
+    margin-left: 17px;
+    font-size: 14px;
+}
+.wanna{
+    font-size: 25px;
+}
+.current{
+    font-size: 15px;
+}
+.startBtn{
+    width: 30%;
+}
+.footer{
+    font-size: 12px;
+}
+}
