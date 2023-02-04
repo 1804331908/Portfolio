@@ -1,112 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/2761c47128.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2761c47128.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("XFBtjPM42HKG3AAFV");
+      })();
+    </script>
+  </head>
 
-<body>
-    <div>
-        <div class="topbar">
-            <div>
-                <img class="image" src="./shiv.png"/>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="nav-logo">
+          <div class="logo-img">
+            <img class="img" src="./shiv.png" />
+          </div>
+          <span class="myName">Shivam Maheshwari</span>
+        </div>
+        <div class="nav-main">
+          <ul class="nav-ul">
+            <li><a href="#home" class="nav-link">HOME</a></li>
+            <li><a href="#about" class="nav-link">ABOUT</a></li>
+            <li><a href="#project" class="nav-link">PROJECT</a></li>
+            <li><a href="#Contact" class="nav-link">CONTACT</a></li>
+          </ul>
+          <div class="menubar">
+            <div class="menuIcon"><i class="fa-solid fa-bars"></i></div>
+            <div class="closeIcon"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="namebar-section">
+      <div class="namebar">
+        <div class="wrapper ten">
+          <div>
+            <h3 class="bounce">
+              <span>H</span>
+              <span>E</span>
+              <span>Y</span>
+              <span>&nbsp</span>
+              <span>I'</span>
+              <span>M</span>
+              <span>&nbsp</span>
+              <span>S</span>
+              <span>H</span>
+              <span>I</span>
+              <span>V</span>
+              <span>A</span>
+              <span>M</span>
+              <span>&nbsp</span>
+              <span>M</span>
+              <span>A</span>
+              <span>H</span>
+              <span>E</span>
+              <span>S</span>
+              <span>H</span>
+              <span>W</span>
+              <span>A</span>
+              <span>R</span>
+              <span>I</span>
+            </h3>
+          </div>
+        </div>
+        <div class="status-div">
+          <p class="status">
+            A Frontend focused Web Developer building the Frontend of Websites
+            and Web Applications that leads to the success of the overall
+            product
+          </p>
+        </div>
+        <div class="btn-div">
+          <a href="mailto:shivammaheshwari503@gmail.com"
+            ><button class="getBtn" type="submit">GET IN TOUCH</button></a
+          >
+        </div>
+      </div>
+      <div class="iconDiv">
+        <div>
+          <a
+            href="https://www.facebook.com/shivam.maheshwari.1675"
+            class="icon-link"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/shivam503/" class="icon-link"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://github.com/1804331908" class="icon-link"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section class="experienceDiv" id="about">
+      <div class="Skill">
+        <div class="myDiv">
+          <h1>My Skills</h1>
+          <h3>Speicialist in need. Generalist at heart</h3>
+        </div>
+        <div class="skillDiv">
+          <div>
+            <div class="ic-div">
+              <i
+                style="font-size: 40px; color: #ffb100"
+                class="fa-solid fa-laptop"
+              ></i>
+              <h1>FRONT-END</h1>
             </div>
-        </div>
-        <div class="namebar">
-            <h1 class="name">Hi, I'm Shivam Maheshwari.</h1>
-            <h1 class="status">Front-end Developer</h1>
-            <button class="getBtn">GET IN TOUCH</button>
-            <div class="iconDiv">
-                <a href="https://www.facebook.com/shivam.maheshwari.1675"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/shivam503/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/1804331908"><i class="fa-brands fa-github-alt"></i></a>
-            </div>
-        </div>
-        <div class="experienceDiv">
-            <div class="myDiv">
-                <h1>My Experience</h1>
-                <h3>Speicialist in need. Generalist at heart</h3>
-            </div>
-            <div class="skillDiv">
-                <div>
-                    <i style="font-size: 40px; color: #ffb100;" class="fa-solid fa-laptop"></i>
-                    <h3>Front-end</h3>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p>
-                    <p>ReactJs</p>
-                    <p>jQuery</p>
-                </div>
-                <div>
-                    <i style="font-size: 40px; color: #ffb100;" class="fa-solid fa-star"></i>
-                    <h3>Tools</h3>
-                    <p>vs-code</p>
-                    <p>Git</p>
-                    <p>Github</p>
-                    <p>MySql</p>
-                </div>
-            </div>
-        </div>
-        <div class="projectDiv">
-            <div>
-                <h1 style="color: black;">WORK</h1>
-                <h3>Here are few of my projects</h3>
-            </div>
-            <div class="project">
-                <div class="kafeneDiv">
-                    <h1>Kafene</h1>
-                    <div class="kafene"><p><b>The Kafene project made with Javascript, HTML and CSS. I used RESTfull APIs by fetching random
-                        locations on map.</b></p></div>
-                    <a href=" https://1804331908.github.io/Kafene-CertificationJs/"><button class="webBtn">Visit Website</button></a>
-                </div>
-                <div class="adminDiv">
-                    <h1>The Admin Panel</h1>
-                    <div class="admin"><p><b>The Admin Panel made with reactJs. I used RESTfull APIs by fetching random locations on map.</b></p></div>
-                    <a href="https://1804331908.github.io/React-Final-Project/"><button class="webBtn">Visit Website</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="skills">
-        <p style="font-weight: 600;
-        font-size: 30px;
-        color: #5BC0F8;">Javascript</p>
-        <p style="font-weight: 600;
-        font-size: 35px;
-        margin-left: -175px;
-        color: #0081C9;">ReactJs</p>
-        <p style="font-size: 31px;
-        margin-left: 131px;
-        color: #86E5FF;">HTML5</p>
-        <p style="font-size: 19px;
-        margin-left: -119px;
-        color: #6C00FF;
-        font-weight: 600;">CSS3</p>
-        <p style="font-size: 25px;
-        font-weight: 600;
-        margin-left: 148px;
-        color: #3C79F5;">Bootstrap</p>
-        <p style="font-size: 15px;
-        margin-left: -117px;
-        color: #86E5FF;">jQuery</p>
-        <p style="margin-left: 37px;
-        font-size: 21px;
-        color: #5BC0F8;">Programming</p>
-        </div>
-        <div class="workDiv">
-         <div><h1 class="wanna">Wanna work with me?</h1></div>
-         <p class="current">I'm currently available for work.</p>
-         <a href="./Shivam's Resume (1).pdf"><button class="startBtn">My Resume</button></a>
-        </div>
-        <div class="footer">
-         <p>Copyright © 2022 | <b>Shivam Maheshwari</b></p>
-        </div>
-    </div>
-</body>
 
+            <div class="skill-box-div">
+              <div class="skill-box"><p>HTML</p></div>
+              <div class="skill-box"><p>CSS</p></div>
+              <div class="skill-box"><p>Javascript</p></div>
+              <div class="skill-box"><p>ReactJs</p></div>
+            </div>
+            <div class="skill-box-div">
+              <div class="skill-box"><p>jQuery</p></div>
+              <div class="skill-box"><p>Redux</p></div>
+              <div class="skill-box"><p>SQL</p></div>
+              <div class="skill-box"><p>Oops</p></div>
+            </div>
+          </div>
+          <div class="tool-div">
+            <div class="ic-div">
+              <i
+                style="font-size: 40px; color: #ffb100"
+                class="fa-solid fa-star"
+              ></i>
+              <h1>TOOLS</h1>
+            </div>
+
+            <div class="skill-box-div">
+              <div class="skill-box"><p>Git</p></div>
+              <div class="skill-box"><p>Github</p></div>
+              <div class="skill-box"><p>vs-code</p></div>
+            </div>
+            <div class="skill-box-div">
+              <div class="skill-box"><p>MySql</p></div>
+              <div class="skill-box"><p>Bootstrap</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projectDiv" id="project">
+      <div class="Project">
+        <div class="project-heading-div">
+          <h2 class="project-heading">PROJECTS</h2>
+          <h3>Here are few of my projects</h3>
+        </div>
+        <div class="project">
+          <div class="project-row-content">
+            <div class="project-row-image">
+              <img
+                class="project-img"
+                src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg"
+              />
+            </div>
+            <div class="kafeneDiv">
+              <h1 class="kafene-heading">Kafene</h1>
+              <div class="kafene">
+                <p>
+                  The Kafene project made with Javascript, HTML and CSS. I used
+                  RESTfull APIs by fetching random locations on map.
+                </p>
+                <li style="font-size: 12px">
+                  <b>To access use username and password - qaifi</b>
+                </li>
+              </div>
+              <a href=" https://1804331908.github.io/Kafene-CertificationJs/"
+                ><button class="webBtn">Visit Website</button></a
+              >
+            </div>
+          </div>
+          <div class="project-row-content">
+            <div class="project-row-image">
+              <img
+                class="project-img"
+                src="https://d33wubrfki0l68.cloudfront.net/9199afe42f789dbddb324ed3edd326e080e693c1/28f54/assets/jpeg/wilsonport.jpeg"
+              />
+            </div>
+            <div class="kafeneDiv">
+              <h1 class="kafene-heading">The Admin Panel</h1>
+              <div class="kafene">
+                <p>
+                  The Admin Panel made with reactJs. I used RESTfull APIs by
+                  fetching random locations on map.
+                </p>
+                <li style="font-size: 12px">
+                  <b>To access use username and password - admin</b>
+                </li>
+              </div>
+              <a href="https://1804331908.github.io/React-Final-Project/"
+                ><button class="webBtn">Visit Website</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="skills">
+        <p style="font-weight: 600; font-size: 30px; color: #5bc0f8">
+          Javascript
+        </p>
+        <p
+          style="
+            font-weight: 600;
+            font-size: 35px;
+            margin-left: -175px;
+            color: #0081c9;
+          "
+        >
+          ReactJs
+        </p>
+        <p style="font-size: 31px; margin-left: 131px; color: #86e5ff">HTML5</p>
+        <p
+          style="
+            font-size: 19px;
+            margin-left: -119px;
+            color: #6c00ff;
+            font-weight: 600;
+          "
+        >
+          CSS3
+        </p>
+        <p
+          style="
+            font-size: 25px;
+            font-weight: 600;
+            margin-left: 148px;
+            color: #3c79f5;
+          "
+        >
+          Bootstrap
+        </p>
+        <p style="font-size: 15px; margin-left: -117px; color: #86e5ff">
+          jQuery
+        </p>
+        <p style="margin-left: 37px; font-size: 21px; color: #5bc0f8">
+          Programming
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="workDiv">
+        <div><h1 class="wanna">Wanna work with me?</h1></div>
+        <p class="current">I'm currently available for work.</p>
+        <a href="./Shivam's Resume (5).pdf"
+          ><button class="startBtn">My Resume</button></a
+        >
+      </div>
+    </section>
+    <section id="Contact" class="contact">
+      <div class="contact-form">
+        <div class="contact-div">
+          <h2 class="contect-heading">CONTACT</h2>
+          <p class="contact-content">
+            Feel free to Contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </p>
+        </div>
+        <div class="form-container">
+          <form>
+            <div class="input-div">
+              <input
+                type="text"
+                id="name"
+                class="input-box"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <div class="input-div">
+              <input
+                type="email"
+                id="email"
+                class="input-box"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="input-div">
+              <textarea
+                class="message-box"
+                id="message"
+                placeholder="Enter Your Message"
+              ></textarea>
+            </div>
+            <button onclick="sendMail()" class="btn-form">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-main">
+          <div class="footer-main-div">
+            <h2>SHIVAM MAHESHWARI</h2>
+            <p class="qutoe">
+              A Frontend focused Web Developer building the Frontend of Websites
+              and Web Applications that leads to the success of the overall
+              product
+            </p>
+          </div>
+          <div class="footer-icon-div">
+            <h2 class="social">SOCIAL</h2>
+            <div>
+              <a
+                href="https://www.facebook.com/shivam.maheshwari.1675"
+                class="icon-footer-link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/1804331908" class="icon-footer-link"
+                ><i class="fa-brands fa-github-alt"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/shivam503/"
+                class="icon-footer-link"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-down">
+          <p>Copyright © 2022 | <b>Shivam Maheshwari</b></p>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
