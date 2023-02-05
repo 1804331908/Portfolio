@@ -798,5 +798,8 @@ iframe{
 .project-video{
     margin: 0;
 }
+.namebar{
+    top: 45%;
+}
 
 }
