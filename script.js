@@ -16,9 +16,16 @@ function sendMail(){
 
 var menu_bar = document.querySelector(".menubar");
 var main_div = document.querySelector(".nav-content");
+var sidebar = document.querySelector("#navUl")
+var toggle =  document.querySelector("#toggle")
 
 menu_bar.addEventListener("click", () => togglebar());
-
+// document.onclick = function (e) {
+//   if(e.target.id !== "sidebar" && e.target.id !== "toggle" ){
+//     sidebar.classList.remove("active");
+//     toggle.classList.remove("active");
+//   }
+// }
 const togglebar = () => {
   main_div.classList.toggle("active");
 };

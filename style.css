@@ -10,15 +10,17 @@
 }
 nav{
     position: fixed;
-    width: 100%;
+    width: 95%;
     z-index: 1000;
+    top: 23px;
+    margin-left: 33px;
     /* background: #000; */
-    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+    /* box-shadow: 0 10px 100px rgb(0 0 0 / 10%); */
 }
 .nav-content {
     display: flex;
     background: #243763;
-
+    border-radius: 62px;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5rem;
@@ -76,7 +78,7 @@ li{
     letter-spacing: 1px;
     font-weight: 700;
     transition: color .3s;
-    background: linear-gradient(to right, midnightblue, midnightblue 50%, #fbfcff 50%);
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, #ffffff 50%);
     background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,6 +86,7 @@ li{
   background-position: 100%;
   transition: background-position 275ms ease;
 }
+
 .nav-link:hover{
     background-position: 0 100%;
 }
@@ -138,7 +141,7 @@ li{
 }
 .namebar{
     position: absolute;
-    top: 50%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%,-50%);
     max-width: 90rem;
@@ -206,7 +209,7 @@ li{
     display: inline-flex;
     color: #2e418b;
     font-family: "Play", sans-serif;
-    animation: bounce 2s;
+    animation: bounce 3s ;
 }
 @keyframes bounce {
     0%,
@@ -298,7 +301,7 @@ li{
 
 .iconDiv{
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     background: #fff;
     box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
@@ -316,7 +319,7 @@ li{
 .experienceDiv{
     width: 100%;
     height: 750px;
-    background-image: url('https://uzma-yasmeen-portfolio.netlify.app/assets/images/keyboard.jpeg');
+    background-color: #0e0e7c;
     color: white;
     /* margin-top: -26px; */
     padding-top: 1px;
@@ -347,7 +350,13 @@ li{
 .project-heading-div{
     text-align: center;
 }
-
+.project-video{
+    margin-left: 80px;
+}
+iframe{
+    box-shadow: rgb(133 133 133 / 69%) 0 7px 29px 0;
+   
+}
 .kafeneDiv{
     padding: 2rem 0;
     display: flex;
@@ -568,7 +577,7 @@ footer{
     padding: 12px 18px;
     font-size: 15px;
     border: none;
-    background: #7fdf58;
+    background: #9dde2e;
     color: #5f5a5a;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -615,6 +624,9 @@ footer{
     margin-right: 0; 
     margin-left: -150px;
       }
+      nav{
+        margin-left: 12px;
+      }
       .logo-img{
         width: 50px;
     height: 50px;
@@ -626,12 +638,12 @@ footer{
         font-size: 22px;
       }
      .nav-ul {
-        width: 100%;
+        width: 54%;
         height: 100vh;
-        background: #114164;
+        background: #6b9ec396;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 205px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -643,6 +655,7 @@ footer{
         visibility: hidden;
         pointer-events: none;
     }
+  
     .active .nav-ul{
         transform: translateX(0);
         opacity: 1;
@@ -696,7 +709,7 @@ footer{
     font-size: 15px;
 }
 .getBtn{
-    width: 40%;
+    width: 45%;
     font-size: 13px;
 }
 .project-row-content{
@@ -746,9 +759,13 @@ footer{
     padding: 10px 8px;
     width: 40%;
 }
-.contact-form{
-    top: 100px;
+.input-box{
+    padding: 10px;
 }
+.form-container{
+    padding: 2rem;
+}
+
 .contact-content{
     font-size: 14px;
     width: 100%;
@@ -766,9 +783,19 @@ footer{
     margin-bottom: 30px;
 }
 .btn-form{
-    width: 100%;
+    width: 50%;
 }
 .nav-logo{
+    margin: 0;
+}
+iframe{
+    width: 100%;
+    height: 228px;
+}
+.project-explain{
+    top: 30px;
+}
+.project-video{
     margin: 0;
 }
 
