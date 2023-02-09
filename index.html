@@ -15,15 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("XFBtjPM42HKG3AAFV");
-      })();
-    </script>
+    
   </head>
 
   <body>
@@ -295,7 +287,8 @@
           </p>
         </div>
         <div class="form-container">
-          <form>
+          <form type="submit" onsubmit="sendMail(); reset(); return false;" >
+            <input type="hidden" name="contact_number">
             <div class="input-div">
               <input
                 type="text"
@@ -319,7 +312,8 @@
                 placeholder="Enter Your Message"
               ></textarea>
             </div>
-            <button onclick="sendMail()" class="btn-form">SUBMIT</button>
+            <input class="btn-form" type="submit" value="Send">
+            <!-- <button onclick="sendMail()" class="btn-form">SUBMIT</button> -->
           </form>
         </div>
       </div>
@@ -360,6 +354,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
