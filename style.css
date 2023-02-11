@@ -8,7 +8,10 @@
     /* overflow-x: hidden; */
     padding: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 nav{
     position: fixed;
     width: 95%;
@@ -288,13 +291,13 @@ li{
 .ten span:nth-of-type(21) {
     animation-delay: 2.2s;
 }
-.ten span:nth-of-type(23) {
+.ten span:nth-of-type(22) {
     animation-delay: 2.3s;
 }
-.ten span:nth-of-type(24) {
+.ten span:nth-of-type(23) {
     animation-delay: 2.4s;
 }
-.ten span:nth-of-type(25) {
+.ten span:nth-of-type(24) {
     animation-delay: 2.5s;
 }
 
@@ -583,8 +586,8 @@ footer{
     padding: 12px 18px;
     font-size: 15px;
     border: none;
-    background: #9dde2e;
-    color: #5f5a5a;
+    background: #facf0f;
+    color: #333;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
@@ -641,7 +644,8 @@ footer{
         font-size: 15px;
       }
       .bounce{
-        font-size: 22px;
+        font-size: 16px;
+        font-weight: 800;
       }
      .nav-ul {
         width: 54%;
@@ -715,7 +719,7 @@ footer{
     font-size: 15px;
 }
 .getBtn{
-    width: 45%;
+    width: 50%;
     font-size: 13px;
 }
 .project-row-content{
